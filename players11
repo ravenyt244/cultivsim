@@ -1,5 +1,8 @@
-local Players = 
-(
-"6211889460",
-"498748326"
-)
+local args = { [1] = 1 }
+local secs = 35
+
+for i = 1, 75, 1 do
+  args[1] = i
+  game:GetService("ReplicatedStorage"):FindFirstChild("\228\186\139\228\187\182"):FindFirstChild("\229\133\172\231\148\168"):FindFirstChild("\229\133\179\229\141\161"):FindFirstChild("\232\191\155\229\133\165\228\184\150\231\149\140\229\133\179\229\141\161"):FireServer(unpack(args))
+  wait(secs)
+end
